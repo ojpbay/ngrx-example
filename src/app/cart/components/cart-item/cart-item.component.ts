@@ -20,4 +20,8 @@ export class CartItemComponent {
   increaseItemInCart() {
     this.increaseItemInCartEvent.emit(this.cartItem);
   }
+  
+  removeItem() {
+    alert('TODO');
+  }
 }
