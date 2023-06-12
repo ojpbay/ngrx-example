@@ -28,11 +28,4 @@ describe('CartItemComponent', () => {
     instance.increaseItemInCart();
     expect(instance.increaseItemInCartEvent.emit).toHaveBeenCalledWith(cartItem);
   });
-
-  it('should emit removeItemFromCart', async () => {
-    const cartItem = {} as CartItem;
-    const {instance} = await shallow.render({bind: {cartItem}});
-    instance.removeItemFromCart();
-    expect(instance.removeItemInCartEvent.emit).toHaveBeenCalledWith(cartItem);
-  })
 });

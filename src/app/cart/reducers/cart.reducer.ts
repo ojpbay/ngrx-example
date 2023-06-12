@@ -48,11 +48,4 @@ export const cartReducer = createReducer(
       numberOfItems: store.numberOfItems + 1
     }
   }),
-  on(CartPageActions.removeItemFromCart, (store: CartFeatureState, result) => {
-    const cartItems = [...store.cartItems.filter(item => item.id !== result.cartItem.id)];
-    return {
-      cartItems,
-      numberOfItems: getNumberOfItems(cartItems)
-    }
-  }),
 );

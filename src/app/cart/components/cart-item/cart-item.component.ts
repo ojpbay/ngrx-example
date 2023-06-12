@@ -17,10 +17,6 @@ export class CartItemComponent {
     this.reduceItemInCartEvent.emit(this.cartItem);
   }
 
-  removeItemFromCart() {
-    this.removeItemInCartEvent.emit(this.cartItem);
-  }
-
   increaseItemInCart() {
     this.increaseItemInCartEvent.emit(this.cartItem);
   }

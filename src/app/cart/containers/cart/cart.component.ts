@@ -31,10 +31,6 @@ export class CartComponent {
     this.store.dispatch(CartPageActions.reduceNumberOfItemInCart({cartItem}))
   }
 
-  removeItem(cartItem: CartItem) {
-    this.store.dispatch(CartPageActions.removeItemFromCart({cartItem}));
-  }
-
   increaseItem(cartItem: CartItem) {
     this.store.dispatch(CartPageActions.increaseNumberOfItemInCart({cartItem}));
   }
